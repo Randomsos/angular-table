@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 
 const persone: any = [
   {
@@ -98,7 +99,13 @@ export class TabellinaComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'birthDate', 'firstName', 'lastName', 'gender', 'hireDate'];
   dataSource = persone;
+  statement: boolean = false;
 
-  
+  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
+
 
 }

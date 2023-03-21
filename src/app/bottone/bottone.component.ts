@@ -19,6 +19,9 @@ export class BottoneComponent implements OnInit {
   @Output()
   change: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  
+  click(){
+    this.cliccato = true;
+    this.change.emit(this.cliccato);
+  }
 
 }

@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "bottone"
+  "defaultProject": "bottone",
+  "cli": {
+    "analytics": "26a505ab-9099-46df-869b-b9116a66e3b6"
+  }
 }
