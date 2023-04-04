@@ -8,7 +8,6 @@ import { TabellinaComponent } from './tabellina/tabellina.component';
 import {MatTableModule} from '@angular/material/table';
 import { BottoneComponent } from './bottone/bottone.component';
 import { EliminaComponent } from './elimina/elimina.component';
-import { PaginatorComponent } from './paginator/paginator.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 
@@ -20,7 +19,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     TabellinaComponent,
     BottoneComponent,
     EliminaComponent,
-    PaginatorComponent
   ],
   imports: [
     BrowserModule,
